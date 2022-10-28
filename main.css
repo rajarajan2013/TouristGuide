@@ -1,0 +1,148 @@
+body {
+  background-image: url("taj.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* .btn {
+  margin: 40px 0px 0px 50px;
+} */
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 5%;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 8%;
+  padding: 50px;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #d46529;
+  --color-2: #2d9ccb;
+  --color-3: #140c0c;
+}
+
+.title-word-2 {
+  --color-1: #bd8f2b;
+  --color-2: #167a6e;
+  --color-3: #edefef;
+}
+
+.title-word-3 {
+  --color-1: #1f8748;
+  --color-2: #e4a9a8;
+  --color-3: #2d897e;
+}
+
+.title-word-4 {
+  --color-1: #3995bc;
+  --color-2: #df8453;
+  --color-3: #c0312f;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 10vh;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 50px 1fr;
+  background-color: rgb(220, 233, 233);
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.carousel {
+  padding: 0px 50px 50px 50px;
+}
+.sr-only {
+  margin-left: 50px;
+}
+h5 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.carousel-caption {
+  top: 5%;
+}
+.carousel-indicators {
+  margin-bottom: 6.5%;
+}
+
+.places {
+  padding: 0px 20px 5px 20px;
+  margin-bottom: 0;
+}
+
+.cb {
+  margin-bottom: 8%;
+}
+.carousel-item {
+  padding: 0px 20px 50px 20px;
+}
+.btn {
+  margin: 10px 0px 0px 40px;
+}
